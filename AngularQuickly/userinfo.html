@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html  ng-app="myApp2">
+<head>
+     <meta charset="ISO-8859-1">
+     <title>User Info</title>
+
+     <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap.min.css" rel="stylesheet">
+	 <link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap-combined.min.css" rel="stylesheet">  
+     <script type="text/javascript" src="lib/angular.min.js"></script>
+     
+     <script type="text/javascript" src="js/motion-2.js"></script>
+
+</head>
+<body ng-controller="myController2">
+
+	<div>
+
+		<h1>User Info</h1>
+		
+	
+		<label>First name</label> 
+		<input type="text" name="firstName" ng-model="fname">
+
+		<label>Last name</label> 
+		<input type="text" 	name="lastName" ng-model="lname">
+		<label>Profession</label> 
+		<input type="text" 	name="profession" ng-model="prof">
+
+		<label>E-mail</label> 
+		<input type="email" name="email" ng-model="email"> 
+		
+		<input type="button" name="display" value="display" ng-click="disp(fname,lname,email)">
+
+	</div>
+
+</body>
+</html>

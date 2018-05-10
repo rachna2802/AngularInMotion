@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>     
+     <title>Level-1</title>
+     
+     <script type="text/javascript" src="lib/angular.min.js"></script>     
+     <!-- <script type="text/javascript" src="js/level-1.js"></script>-->
+     
+</head>
+<body ng-init="hourofday=10">
+
+	<div>
+           {{ 'Simple sum 2+3 = ' }} {{ 2+3 }}
+	</div>
+<p ng-if="hourofday < 12">Good Morning Rachna </p>
+<p ng-if="hourofday >17">Good Evening Rachna </p>
+<p>The hour of the day is:<span ng-bind="hourofday"/> </p>
+<p>The hour of the day is:{{hourofday}} </p>
+</body>
+</html>
